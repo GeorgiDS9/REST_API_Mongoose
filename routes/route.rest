@@ -1,0 +1,30 @@
+// REST Client is VS Code extension that can be used in lieu of Postman, in order to test the REST API
+// The REST Client file has to end in .rest or .http
+
+ GET http://localhost:3000/subscribers 
+
+###
+
+GET http://localhost:3000/subscribers/15hsfdscdnsjfhojfodsl45gfsdf
+
+###
+
+POST http://localhost:3000/subscribers
+Content-type: application/json
+
+{
+  "name": "John Doe",
+  "subscribedToChannel": "Project X"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/16hsfdscdnsjfhojfodsl47gfsdf
+
+###
+
+PATCH http://localhost:3000/subscribers/15hsfdscdnsjfhojfodsl45gfsdf
+Content-type: application/json
+{
+  "name": "New Name"
+}
